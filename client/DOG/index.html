@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOG - App</title>
+    <link rel="stylesheet" href="./dog.css">
+    <script defer src="./dog.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <section class="wrapper overlay">    
+        <header>
+            <nav class="navbar">
+                <div class="logo">
+                    <i class="fab fa-angellist logoImg"></i>
+                    <span class="logoTitle">DOGS</span>
+                </div>
+                <div class="nav-links">
+                    <ul class="nav-list">
+                        <li class="nav-item"><a aria-disabled="true" href="../index.html">HOME</a></li>
+                        <li class="nav-item"><a aria-disabled="true" href="#">Currency</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <div class="searchBreed">
+            <span class="titleSearch">
+                Search your favorite dog breed
+            </span>
+            <div class="inputAndSearch">
+                <input type="text" id="inputBreed" placeholder="Breed..." autocomplete="off">
+                <button type="submit" id="searchBreed">Search</button>
+            </div>
+        </div>
+        <div id="breedResults" class="breedResults">
+            <div class="card">
+                <div class="cardHeader">
+                    <h1>Breed: <span id="breedName"></span></h1>
+                </div>
+                <div class="cardBody">
+                    <img src="" alt="" id="breedImg" hidden>
+                </div>
+                <div class="cardFooter">
+                    <i id="addToFavorite" class="far fa-heart"></i>
+                    <i id="next" class="fas fa-arrow-right"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
